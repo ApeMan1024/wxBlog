@@ -1,0 +1,20 @@
+<view class="vi1">
+    <view class="vie1">
+        <view class="vie1_1">
+            <image class="img1" src="{{src}}" ></image>
+        </view>
+        <view class="vie1_2">
+            <!-- <button type="primary" size="mini" wx:if="{{bool}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button> -->
+            <button type="primary" size="mini" wx:if="{{bool}}" bindtap="onLoginHandle">登录</button>
+            <text class="text1" wx:else>{{name}}</text>
+        </view>
+    </view>
+    <view class="vie2">
+        <view class="li">
+            <navigator class="na1"  url="/pages/show/show?id={{item.id}}" hover-class="none" wx:for="{{url}}" wx:key="index">
+                <text class="iconfont {{item.cla}}">{{item.name}}</text> 
+            </navigator>
+           
+        </view>
+    </view>
+</view>

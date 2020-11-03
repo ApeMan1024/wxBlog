@@ -1,0 +1,33 @@
+<view class="view">
+  <swiper indicator-dots autoplay circular interval="2000">
+    <swiper-item wx:for="{{img}}" wx:key="index">
+       <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="box" wx:for="{{arr1}}" wx:key="index" >
+    <navigator url="{{item.url}}" class="na_1" hover-class="none">
+      <view class="vi1">
+        <image src="{{item.src1}}" class="img1"></image>
+        <view class="vie1">
+          <text class="text1">发表时间：</text>
+          <text class="text2">{{item.time}}</text>
+        </view>
+        <view class="vie3">
+          <image src="/images/zuo.png" class="img2"></image>
+          <text class="text3">{{item.author}}</text>
+          <view class="vie3_1">
+            <image src="/images/yanjing.png" class="img2"></image>
+            <text>{{item.num}}</text>
+          </view>
+        </view>
+        <view class="vie2">{{item.title}}</view>
+      </view>
+    </navigator>
+    <view class="vi2">
+      <button size="mini" type="primary" bind:tap="bindtap" data-mold="{{item.mold}}">{{item.mold}}</button>
+    </view>
+  </view>
+  <view class="vi3" wx:if="{{bool}}">
+    <text>END</text>
+  </view>
+</view>

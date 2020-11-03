@@ -1,0 +1,172 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vi1 {
+  background: #87cefa;
+  line-height: 100rpx;
+  color: #fff;
+  padding-left: 80rpx;
+  font-weight: bold;
+  padding-bottom: 20rpx;
+}
+
+.vi2 {
+  background: #fff;
+  box-shadow: 1px 1px 8px #ccc;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  top: -20rpx;
+  border-radius: 5rpx;
+  color: #999;
+}
+
+.vi2 .te2 {
+  color: magenta;
+  font-weight: bold;
+}
+
+.vi2_1 {
+  display: flex;
+  align-items: center;
+}
+
+.vi2_1 image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.vi2_1 text {
+  padding-left: 10rpx;
+}
+
+.vi3 {
+  margin: 10rpx;
+}
+
+.vi3_1 {
+  min-height: 66vh;
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx solid #999;
+}
+
+.vi3_2 {
+  padding: 10rpx 0;
+}
+
+.vi3_2 navigator {
+  padding: 10rpx 0;
+  font-weight: bold;
+}
+
+.vi3_2 navigator:hover {
+  background: none;
+}
+
+.vi4 {
+  margin: 10rpx;
+  margin-bottom: 50rpx;
+  border: 2rpx groove;
+  border-radius: 5rpx;
+}
+.vi4 .area{
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2px;
+}
+.vi4 .area .text_num{
+  position: absolute;
+  bottom: 0px;
+  right:0px;
+  margin:10px;
+  color:#fff;
+}
+.vi4 textarea {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5rpx;
+  /* text-align: center; */
+  width: 100%;
+}
+
+.vi4_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-left:2px;
+  margin-right:2px;
+}
+
+.vi4_1 button {
+  margin: 0px;
+}
+
+.vi5 {
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx;
+}
+
+.vi5 .tex1 {
+  display: block;
+  padding: 10rpx 0;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+
+.vi5_1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rpx;
+}
+
+.vi5_1 .ping {
+  display: flex;
+  flex-direction: column;
+  margin: 5rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx dashed #999;
+}
+
+.vi5_1 .ping .ping_1 {
+  display: flex;
+  align-items: center;
+}
+
+.vi5_1 .ping .ping_1 image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.vi5_1 .ping .ping_2 {
+  display: -webkit-box;/*弹性盒子*/
+  overflow: hidden;/*超出隐藏*/
+  text-overflow: ellipsis;/*省略号*/
+  -webkit-line-clamp: 2;/*行数*/
+  -webkit-box-orient: vertical;
+  align-content: center;
+  word-break: break-word;/*换行显示*/
+}
+
+.im1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+
+.im1 text:nth-child(1) {
+  color: #836fff;
+}
+
+.im1 text:nth-child(2) {
+  color: #999;
+}

@@ -1,0 +1,64 @@
+<view class="view">
+  <view class="vi1">
+    <text>{{obj.title}}</text>
+  </view>
+  <view class="vi2">
+    <text class="te1">{{obj.time}}</text>
+    <text class="te2">.{{obj.mold}}.</text>
+    <view class="vi2_1">
+      <image src="/images/yanjing.png"></image>
+      <text class="te3">{{obj.num}}</text>
+    </view>
+  </view>
+  <view class="vi3">
+    <view class="vi3_1">
+      <wemark md="{{md}}" link highlight type="wemark"></wemark>
+    </view>
+    <view class="vi3_2">
+      <block wx:if="{{bool1}}">
+
+        <navigator url="{{obj1.url}}" hover-class="none" open-type="redirect">
+          上一篇：
+          <text>{{obj1.title}}</text>
+        </navigator>
+      </block>
+      <block wx:if="{{bool2}}">
+        <navigator url="{{obj2.url}}" hover-class="none" open-type="redirect">
+          下一篇：
+          <text>{{obj2.title}}</text>
+        </navigator>
+      </block>
+    </view>
+  </view>
+  <view class="vi4">
+    <form>
+      <view class="area">
+        <textarea placeholder="快来评论一下吧~" model:value="{{nei}}" maxlength="{{total}}"></textarea>
+      <text class="text_num">{{nei.length}}/{{total}}</text>
+      </view>
+      
+      <view class="vi4_1">
+        <button form-type="submit" size="mini" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">评论</button>
+        <icon type="waiting" size="30"></icon>
+        <button form-type="reset" size="mini" type="primary">重置</button>
+      </view>
+    </form>
+  </view>
+  <view class="vi5">
+    <text class="tex1">{{arr.length}}条评论</text>
+    <view class="vi5_1">
+      <view class="ping" wx:for="{{arr}}" wx:key="index">
+        <view class="ping_1">
+          <image src="{{item.src}}"></image>
+          <view class="im1">
+            <text>{{item.name}}</text>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+        <view class="ping_2">
+          {{item.nei}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

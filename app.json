@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/mine/mine",
+    "pages/carry/carry", 
+    "pages/show/show",
+    "pages/browse/browse",
+    "pages/mark/mark",
+    "pages/login/login",
+    "component/tab/tab"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "猿人博客",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_fill.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "分类",
+        "iconPath": "/images/project.png",
+        "selectedIconPath": "/images/project_fill.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user_fill.png"
+      }
+    ],
+    "backgroundColor": "#87CEFA"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

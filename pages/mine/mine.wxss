@@ -1,0 +1,39 @@
+@import "/lib/font.wxss";
+
+.vi1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.vi1 .vie1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:rgb(143, 163, 180);
+    min-height:30vh;
+    color:#fff;
+}
+.vi1 .vie1 .vie1_1{
+    width:30vw;
+    height:30vw;
+}
+.vi1 .vie1 .vie1_1 image{
+    width: inherit;
+    height:inherit;
+    border-radius: 50%;
+}
+.vi1 .vie1 .vie1_2 text{
+    font-weight: bold;
+}
+.vi1 .vie2{
+    margin-top:20rpx;
+    box-shadow: 1px 1px 8px #ccc;
+}
+.vi1 .vie2 navigator{
+    padding: 20rpx 10rpx;
+    border-bottom: 1rpx solid #999;
+}
+.vi1 .vie2 navigator:last-child{
+    border-bottom: none;
+}

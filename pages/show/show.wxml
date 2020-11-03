@@ -1,0 +1,21 @@
+<view class="view" wx:if="{{id=='4'}}">
+    <view class="vi1" >
+        <view class="vie1" >
+            博客已经在线
+        </view>
+        <view class="vie1" decode="{{true}}">
+            <text >{{str1}}</text>
+        </view>
+    </view>
+</view>
+<view class="view1" wx:if="{{id=='3'}}">
+    <view class="vi1">感谢你的支持</view>
+    <view class="vi2">
+        <image class="" src="{{reward}}"></image>
+    </view>
+      
+</view>
+
+<view class="view2" wx:if="{{id=='2'||id=='1'}}">
+<wemark md="{{md}}" link highlight type="wemark"></wemark>
+</view>

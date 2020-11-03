@@ -1,0 +1,56 @@
+<view class="view">
+    <view class="vi1">
+        <input type="text" placeholder="请输入想要搜索的博文" model:value="{{nei}}"/>
+        <button type="primary" size="mini" bindtap="bindtap">搜索</button>
+    </view>
+    <view class="vi2">
+        <navigator wx:for="{{arr1}}" wx:key="index" url="{{item.url}}" hover-class="none">
+            <view class="vie">
+                <view class="vie_1">
+                    <image class="img1" src="{{item.src1}}"></image>
+                </view>
+                <view class="vie_2">
+                    <view class="li">
+                        <text class="text1">{{item.title}}</text>
+                    </view>
+                    <view class="li">
+                        <text class="text2">发表时间：</text>
+                        <text class="text3">{{item.time}}</text>
+                    </view>
+                    <view class="li li_1">
+                        <view class="li1">
+                            <image class="img2" src="/images/zuo.png"></image>
+                            <text class="te1">{{item.author}}</text>
+                        </view>
+                        <view class="li1">
+                            <image class="img2" src="/images/yanjing.png"></image>
+                            <text class="te2">{{item.num}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <view class="vi3">
+        <view class="vie1">
+            <text class="text1">标签云</text>
+        </view>
+        <view class="vie2">
+            <navigator class="na1" wx:for="{{list}}" wx:key="index" style="background:{{arr[index]}}" url="{{item.url}}" hover-class="none">
+                {{item.name}}
+            </navigator>
+        </view>
+    </view>
+    <view class="vi4" >
+        <view class="vie1">
+            <view class="box1">欢</view>
+            <view class="box1">迎</view>
+            <view class="box1">光</view>
+            <view class="box1">临</view>
+             <view class="box1">猿</view>
+            <view class="box1">人</view>
+            <view class="box1">博</view>
+            <view class="box1">客</view>
+        </view>
+    </view>
+</view>

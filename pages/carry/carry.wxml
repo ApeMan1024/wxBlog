@@ -1,0 +1,13 @@
+<view class="view" catch:tap="bindtap">
+    <view class="vi1">
+        <image src="https://i.postimg.cc/VLzn8TWh/xing.png"></image>
+        
+    </view>
+    <text>
+        请长按链接复制到浏览器打开
+    </text>
+    <text selectable="{{bool}}" catchlongpress="bindtap1" class="te1">
+        {{url}}
+    </text> 
+</view>
+  
